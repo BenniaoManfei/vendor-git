@@ -1,0 +1,14 @@
+info:
+  author: Daniel·Dai
+  date: 2018年10月27日16:56:14
+  desc: 微服务-首页
+
+feign:
+  hystrix:
+    enabled: true
+
+server:
+  port: 9041
+vendor-openapi:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
