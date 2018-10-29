@@ -1,0 +1,23 @@
+info:
+  author: Daniel·Dai
+  date: 2018年10月27日16:56:14
+  desc: 微服务-首页
+spring:
+  profiles:
+    active: dev
+
+feign:
+  hystrix:
+    enabled: true
+
+server:
+  port: 9031
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+vendor-openapi:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
